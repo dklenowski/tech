@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - cisco
-Tags:
-  - netflow
--->
+Categories: cisco
+Tags: netflow
 
 ## Configuring netflow on Cisco Devices
 

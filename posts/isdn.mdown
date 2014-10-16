@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - networking
-Tags:
-  - isdn
-  - cisco
-  - ntu
--->
+Categories: networking
+Tags: isdn
+      cisco
+      ntu
 
 ## Introduction
 

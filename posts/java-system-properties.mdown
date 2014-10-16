@@ -1,11 +1,5 @@
-<!--
-Categories:
-  - java
-  - jms
-Tags:
-  - java
-  - jms
--->
+Categories: java
+Tags: system properties
 
 
         public class Demo {

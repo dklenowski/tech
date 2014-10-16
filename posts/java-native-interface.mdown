@@ -1,11 +1,6 @@
-<!--
-Categories:
-  - java
-Tags:
-  - java
-  - jni
-  - java native
--->
+Categories: java
+Tags: jni
+      java native
 
 ## Java Native Interface
 

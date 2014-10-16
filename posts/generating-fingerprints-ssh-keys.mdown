@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - ssh
-  - fingerprint
--->
+Categories: linux
+Tags: ssh
+      fingerprint
 
 - Generating fingerprints for all your ssh keys
 

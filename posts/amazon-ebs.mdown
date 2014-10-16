@@ -1,11 +1,6 @@
-<!--
-Categories:
-  - amazon
-  - aws
-Tags:
-  - ebs
--->
-
+Categories: amazon
+            aws
+Tags: ebs
 
 ### Creating and mounting an EBS volume
 

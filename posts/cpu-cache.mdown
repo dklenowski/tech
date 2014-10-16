@@ -1,14 +1,10 @@
-<!--
-Categories:
-  - cpu
-  - linux
-Tags:
-  - linux
-  - performance
-  - cpu
-  - cpu cache
-  - cache
--->
+Categories: cpu
+            linux
+Tags: linux
+      performance
+      cpu
+      cpu cache
+      cache
 
 ## References ##
 

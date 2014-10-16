@@ -1,16 +1,12 @@
-<!--
-Categories:
-  - unix
-  - linux
-Tags:
-  - context switch
-  - context
-  - interrupts
-  - clock
-  - tick
-  - fasties
-  - slowies
--->
+Categories: unix
+            linux
+Tags: context switch
+      context
+      interrupts
+      clock
+      tick
+      fasties
+      slowies
 
 ## Reference ##
 

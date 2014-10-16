@@ -1,12 +1,7 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - linux
-  - lvm
-  - disk
--->
-
+Categories: linux
+Tags: linux
+      lvm
+      disk
 
 - Add a LVM Partition
 

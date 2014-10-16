@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - linux
-  - xen
-Tags:
-  - linux
-  - xen
--->
+Categories: linux
+            xen
+Tags: linux
+      xen
 
 ## `virt-install` ##
 

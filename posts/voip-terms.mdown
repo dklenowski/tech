@@ -1,12 +1,7 @@
-
-<!--
-Categories:
-  - networking
-Tags:
-  - voip
-  - jitter
-  - delay
--->
+Categories: networking
+Tags: voip
+      jitter
+      delay
 
 ## Voice Over IP (VoIP) Terms
 

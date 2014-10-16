@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - computing
-  - security
-Tags:
-  - computer security
-  - security
--->
+Categories: computing
+            security
+Tags: computer security
+      security
 
 ## Objectives
 

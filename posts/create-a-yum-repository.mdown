@@ -1,12 +1,8 @@
-<!--
-Categories:
-  - linux
-  - redhat
-Tags:
-  - linux
-  - redhat
-  - yum
--->
+Categories: linux
+            redhat
+Tags: linux
+      redhat
+      yum
 
 ### Install the `createrepo` rpm.
 

@@ -1,13 +1,7 @@
-<!--
-Categories:
-  - java
-Tags:
-  - java
-  - pattern
-  - matcher
-  - regex
--->
-
+Categories: java
+Tags: pattern
+      matcher
+      regex
 
 ## Java Regular Expressions
 

@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - java
-Tags:
-  - java
--->
+Categories: java
+Tags: locks
 
 ## Introduction ##
 

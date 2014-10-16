@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - java
-Tags:
-  - java
-  - binary
-  - mysql
--->
+Categories: java
+Tags: java
+      binary
+      mysql
 
         File f = new File(pic);
         FileInputStream fis = new FileInputStream(f);

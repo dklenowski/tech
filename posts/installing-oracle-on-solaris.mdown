@@ -1,12 +1,9 @@
-<!--
-Categories:
-  - oracle
-Tags:
-  - oracle
-  - install
-  - installation
-  - solaris
--->
+Categories: oracle
+Tags: oracle
+      install
+      installation
+      solaris
+
 ## Initial
 
 1. Create the users/groups for Oracle (Note, the group's `oinstall` and `dba` are equivalent, use the one that is standard for your company).

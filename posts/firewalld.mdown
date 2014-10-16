@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - redhat
-Tags:
-  - firewalld
--->
+Categories: redhat
+Tags: firewalld
 
 ## Add a rule to allow all traffic from a particular host
 

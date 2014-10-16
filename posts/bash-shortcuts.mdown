@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - bash
-Tags:
-  - shortcuts
--->
+Categories: bash
+Tags: shortcuts
 
 ## Bash Shortcuts
 

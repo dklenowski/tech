@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - networking
-Tags:
-  - dhcp
-  - renew
--->
+Categories: networking
+Tags: dhcp
+      renew
 
 ## Note
 

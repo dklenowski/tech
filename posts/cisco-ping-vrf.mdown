@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - cisco
-Tags:
-  - cisco
-  - ping
-  - vrf
--->
+Categories: cisco
+Tags: cisco
+      ping
+      vrf
 
 ## To ping over the management interface of a Cisco Router (including Nexus) ##
 

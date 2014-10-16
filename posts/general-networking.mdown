@@ -1,14 +1,10 @@
-<!--
-Categories:
-  - networking
-Tags:
-  - osi
-  - connection
-  - classful
-  - classless
-  - unreliable
-  - reliable
--->
+Categories: networking
+Tags: osi
+      connection
+      classful
+      classless
+      unreliable
+      reliable
 
 ## Terms ##
 

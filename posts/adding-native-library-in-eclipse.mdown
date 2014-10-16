@@ -1,13 +1,9 @@
-<!--
-Categories:
-  - eclipse
-Tags:
-  - eclipse
-  - shortcut
-  - ide
-  - native
-  - library
--->
+Categories: eclipse
+Tags: eclipse
+      shortcut
+      ide
+      native
+      library
 
 - Adding native library to a project (avoiding having to insert `DYLD_LIBRARY_PATH` in all run/debug configurations):
 

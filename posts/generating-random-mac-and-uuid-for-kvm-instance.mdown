@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - linux
-  - unix
-Tags:
-  - kvm
-  - uuid
--->
+Categories: linux
+            unix
+Tags: kvm
+      uuid
 
 - To generate a random MAC address:
 

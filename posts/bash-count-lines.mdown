@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - bash
-Tags:
-  - count
--->
+Categories: bash
+Tags: count
 
 Using find, following example counts the number of lines of java (`wc` will display a sum at the end):
 

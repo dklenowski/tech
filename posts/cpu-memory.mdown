@@ -1,12 +1,8 @@
-<!--
-Categories:
-  - cpu
-  - linux
-Tags:
-  - memory
-  - uma
-  - numa
--->
+Categories: cpu
+            linux
+Tags: memory
+      uma
+      numa
 
 ## References ##
 

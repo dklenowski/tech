@@ -1,11 +1,8 @@
-<!--
-Categories:
-  - networking
-  - cisco
-Tags:
-  - snmp
-  - mib
--->
+Categories: networking
+            cisco
+Tags: snmp
+      mib
+
 ## Terms ##
 
 ### Throttling ###

@@ -1,12 +1,7 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - linux
-  - debian
-  - apt
--->
-
+Categories: linux
+Tags: linux
+      debian
+      apt
 
 ## List installed packages ##
 

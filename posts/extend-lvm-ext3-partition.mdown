@@ -1,13 +1,9 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - linux
-  - lvm
-  - disk
-  - extend
-  - ext3
--->
+Categories: linux
+Tags: linux
+      lvm
+      disk
+      extend
+      ext3
 
 ## Extending an ext3 Logical Volume
 

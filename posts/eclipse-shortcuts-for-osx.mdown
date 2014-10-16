@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - eclipse
-Tags:
-  - eclipse
-  - shortcut
-  - ide
--->
+Categories: eclipse
+Tags: eclipse
+      shortcut
+      ide
 
 must use fn key e.g. to run an app in debug mode, type:
 

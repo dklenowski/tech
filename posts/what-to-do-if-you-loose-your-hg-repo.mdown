@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - mercurial
-Tags:
-  - hg
--->
+Categories: mercurial
+Tags: hg
 
 ## What do you do if you use your remote hg repo
 

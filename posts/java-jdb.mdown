@@ -1,12 +1,7 @@
-<!--
-Categories:
-  - java
-  - jdb
-Tags:
-  - java
-  - jdb
--->
-
+Categories: java
+            jdb
+Tags: java
+      jdb
 
 ## Java Debugger (jdb)
 

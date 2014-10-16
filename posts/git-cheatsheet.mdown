@@ -1,3 +1,6 @@
+Categories: git
+Tags: branch
+      remote
 
 ## Merge remote changes on master to a local branch
 

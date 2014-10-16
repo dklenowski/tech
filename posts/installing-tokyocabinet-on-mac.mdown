@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - mac
-Tags:
-  - mac
-  - tokyocabinet
--->
+Categories: mac
+Tags: mac
+      tokyocabinet
 
 - Installing `tokyocabinet` on mac:
 

@@ -1,12 +1,7 @@
-<!--
-Categories:
-  - computing
-Tags:
-  - tuning
-  - dma
-  - udma
--->
-
+Categories: computing
+Tags: tuning
+      dma
+      udma
 
 ## Hardware ##
 

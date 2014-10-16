@@ -1,14 +1,10 @@
-<!--
-Categories:
-  - linux
-  - debian
-Tags:
-  - deb
-  - package
-  - dpkg
-  - apt
-  - apt-get
--->
+Categories: linux
+            debian
+Tags: deb
+      package
+      dpkg
+      apt
+      apt-get
 
 ## List installed packages ##
 

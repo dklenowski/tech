@@ -1,12 +1,8 @@
-<!--
-Categories:
-  - networking
-  - cisco
-Tags:
-  - bri
-  - catalyst
-  - series
--->
+Categories: networking 
+            cisco
+Tags: bri
+      catalyst
+      series
 
 ## Terms
 

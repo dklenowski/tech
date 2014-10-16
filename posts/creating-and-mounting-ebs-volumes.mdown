@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - amazon
-Tags:
-  - amazon
-  - ebs
-  - elastic block store
--->
+Categories: amazon
+Tags: amazon
+      ebs
+      elastic block store
 
 ### Creating and mounting an EBS volumes
 

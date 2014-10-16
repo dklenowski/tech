@@ -1,12 +1,8 @@
-<!--
-Categories:
-  - networking
-  - cisco
-Tags:
-  - debug
-  - router
-  - reverse telenet
--->
+Categories: networking 
+            cisco
+Tags: debug
+      router
+      reverse telenet
 
 ### Miscellaneous Commands ###
 

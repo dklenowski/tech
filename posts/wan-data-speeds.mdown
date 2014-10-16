@@ -1,3 +1,7 @@
+Categories: networking
+Tags: wan
+      data speeds
+
 ## WAN Data Speeds
 
 | Technology | Link Speed | 
