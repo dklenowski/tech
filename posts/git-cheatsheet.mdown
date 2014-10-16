@@ -1,0 +1,12 @@
+
+## Merge remote changes on master to a local branch
+
+    git checkout master
+    git pull
+    git checkout <local-branch-name>
+    git merge
+
+## Push a local branch to a remote repository
+
+    git push -u origin <local-branch-name>
+

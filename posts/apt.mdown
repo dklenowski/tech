@@ -1,0 +1,76 @@
+<!--
+Categories:
+  - linux
+Tags:
+  - linux
+  - debian
+  - apt
+-->
+
+
+## List installed packages ##
+
+      # dpkg --get-selections
+      # dpkg --list
+
+## List the files contained within an installed package ##
+
+      # dpkg --listfiles <installed-package>
+
+## Update local cache ##
+
+      # apt-get update
+
+## Search for a package ##
+
+      # apt-cache search <package>
+
+## Add package ##
+
+      # apt-get install <package>
+
+## Remove Package ##
+
+      # apt-get remove <package>
+
+## View all versions available for a package
+
+        apt-cache madison <package>
+
+
+## Download (allready installed) package
+
+        apt-get -d -o=dir::cache=/tmp install <package> --reinstall
+
+## Download (not installed) package
+
+        apt-get -d -o=dir::cache=/tmp install <package>
+
+## Contents of package
+
+        dpkg -L <package_name>
+        dpkg -c <package_name.deb>
+
+## Which package owns file
+
+         dpkg -S /bin/ls
+
+
+## Locations ##
+
+### The location of preinstall,postinstall etc scripts
+
+      /var/lib/dpkg/info/
+
+## Troubleshooting ##
+
+
+### `Problem with MergeList` ###
+
+- Remove the files in `/var/lib/apt/lists` (making sure not to remove the directory `/var/lib/apt/lists/partial`).
+
+### `Dynamic MMap ran out of room`
+
+- Edit/create a file called `/etc/apt/apt.conf` with the following line:
+
+        APT::Cache-Limit "50000000";
