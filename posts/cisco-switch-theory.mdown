@@ -1,14 +1,10 @@
-<!--
-Categories:
-  - networking
-  - cisco
-Tags:
-  - switch
-  - broadcast
-  - vlan
-  - trunking
-  - collision
--->
+Categories: networking 
+            cisco
+Tags: switch
+      broadcast
+      vlan
+      trunking
+      collision
 
 ## Overview ##
 

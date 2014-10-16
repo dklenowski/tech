@@ -1,13 +1,9 @@
-<!--
-Categories:
-  - networking
-  - cisco
-Tags:
-  - catos
-  - switch
-  - vtp
-  - stp
--->
+Categories: networking
+            cisco
+Tags: catos
+      switch
+      vtp
+      stp
 
 ## Notes ##
 

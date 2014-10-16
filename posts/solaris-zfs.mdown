@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - zfs
-  - zpool
--->
+Categories: solaris
+Tags: zfs
+      zpool
 
 ## Intro ##
 
