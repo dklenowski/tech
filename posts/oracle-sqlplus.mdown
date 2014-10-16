@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - oracle
-Tags:
-  - sqlplus
--->
+Categories: oracle
+Tags: sqlplus
 
 ### Connection ###
 

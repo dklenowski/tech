@@ -1,12 +1,6 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - linux
-  - init
-  - init.d
--->
-
+Categories: linux
+Tags: init
+      init.d
 
 - Just modify `name`, `binary`, `options` and `pidcmd`
 

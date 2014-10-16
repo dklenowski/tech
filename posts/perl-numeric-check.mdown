@@ -1,11 +1,6 @@
-<!--
-Categories:
-  - perl
-Tags:
-  - perl
-  - config
-  - package
--->
+Categories: perl
+Tags: config
+      package
 
 Reference [http://www.perl.com/doc/FMTEYEWTK/is_numeric.html](http://www.perl.com/doc/FMTEYEWTK/is_numeric.html)
 

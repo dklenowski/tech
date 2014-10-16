@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - database
-Tags:
-  - database
-  - linux
-  - sqlite
+Categories: database
+Tags: linux
+      sqlite
 -->
 
 ### Connecting

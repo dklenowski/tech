@@ -1,13 +1,7 @@
-<!--
-Categories:
-  - dell
-  - idrac
-Tags:
-  - dell
-  - idrac
-  - mount
-  - disk
--->
+Categories: dell
+Tags: idrac
+      mount
+      disk
 
 - Lets you mount a disk from a management server to a remote server (via the iDrac).
 

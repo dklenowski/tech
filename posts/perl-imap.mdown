@@ -1,10 +1,5 @@
-<!--
-Categories:
-  - perl
-Tags:
-  - perl
-  - imap
--->
+Categories: perl
+Tags: imap
 
 ### Package ###
 

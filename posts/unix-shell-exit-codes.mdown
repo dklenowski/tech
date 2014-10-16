@@ -1,12 +1,7 @@
-<!--
-Categories:
-  - unix
-Tags:
-  - unix
-  - shell
-  - exit
-  - exit code
--->
+Categories: unix
+Tags: shell
+      exit
+      exit code
 
 - Range
 

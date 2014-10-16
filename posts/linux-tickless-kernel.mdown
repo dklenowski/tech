@@ -1,13 +1,9 @@
-<!--
-Categories:
-  - linux
-  - unix
-Tags:
-  - kernel
-  - tickless
-  - timer
-  - jiffies
--->
+Categories: linux
+            unix
+Tags: kernel
+      tickless
+      timer
+      jiffies
 
 ## References ##
 

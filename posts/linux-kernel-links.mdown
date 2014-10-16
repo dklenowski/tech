@@ -1,11 +1,6 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - linux
-  - sourcecode
-  - kernel
--->
+Categories: linux
+Tags: sourcecode
+      kernel
 
 ## Context Switching Code ##
 

@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - mirroring
-  - mirror
-  - metstat
--->
+Categories: solaris
+Tags: mirroring
+      mirror
+      metstat
 
 # Solaris Mirroring
 

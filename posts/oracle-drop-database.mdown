@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - oracle
-Tags:
-  - drop
-  - database
--->
+Categories: oracle
+Tags: drop
+      database
 
 - To remove `datafiles`, `redologs`, `controlfiles` and `spfile`.
 

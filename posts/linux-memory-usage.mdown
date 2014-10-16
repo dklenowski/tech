@@ -1,15 +1,10 @@
-<!--
-Categories:
-  - linux
-  - memory
-Tags:
-  - linux
-  - memory
-  - top
-  - vmstat
-  - meminfo
-  - free
--->
+Categories: linux
+            memory
+Tags: memory
+      top
+      vmstat
+      meminfo
+      free
 
 ## References ##
 

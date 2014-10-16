@@ -1,3 +1,7 @@
+Categories: linux
+            redhat
+Tags: rpm
+
 To build a rpm (along with source rpm):
 
     cd /usr/src/redhat

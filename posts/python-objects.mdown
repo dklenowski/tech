@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - python
-Tags:
-  - objects
--->
+Categories: python
+Tags: objects
 
 ## Python Objects
 

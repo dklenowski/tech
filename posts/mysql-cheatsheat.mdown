@@ -1,13 +1,8 @@
-<!--
-Categories:
-  - mysql
-Tags:
-  - mysql
-  - innodb
-  - myisam
-  - mysqldump
-  - index
--->
+Categories: mysql
+Tags: innodb
+      myisam
+      mysqldump
+      index
 
 ## Database
 

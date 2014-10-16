@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - osx
-Tags:
-  - oracle
-  - client
--->
+Categories: osx
+Tags: oracle
+      client
 
 Information on how to install the oracle client on osx
 

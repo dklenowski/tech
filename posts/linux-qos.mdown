@@ -1,12 +1,6 @@
-<!--
-Categories:
-  - linux
-  - qos
-Tags:
-  - linux
-  - qos
-  - performance
--->
+Categories: linux
+Tags: qos
+      performance
 
 ## Sample init script
 

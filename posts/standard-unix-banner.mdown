@@ -1,10 +1,7 @@
-<!--
-Categories:
-  - unix
-  - linux
-Tags:
-  - banner
--->
+Categories: unix 
+            linux
+Tags: banner
+
 
     |-----------------------------------------------------------------|
     | This system is for the use of authorized users only.            |

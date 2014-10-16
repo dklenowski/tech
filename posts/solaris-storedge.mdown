@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - storedge
--->
+Categories: solaris
+Tags: storedge
 
 
 ## Configuring the Sun Storage Automated Diagnostic Environment ##

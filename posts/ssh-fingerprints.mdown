@@ -1,9 +1,6 @@
-<!--
-Categories:
-  - ssh
-  - bash
-Tags:
-  - fingerprint
+Categories: ssh
+            bash
+Tags: fingerprint
 -->
 
 ### Generating fingerprints for all your ssh keys ###

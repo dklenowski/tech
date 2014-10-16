@@ -1,13 +1,8 @@
-<!--
-Categories:
-  - oracle
-  - unix
-  - linux
-Tags:
-  - oracle
-  - instant client
-  - tnsnames
--->
+Categories: oracle
+            unix
+            linux
+Tags: instant client
+      tnsnames
 
 ### Setting up Oracle Instantclient Environment ###
 

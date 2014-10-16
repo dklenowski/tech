@@ -1,15 +1,11 @@
-<!--
-Categories:
-  - unix
-  - linux
-Tags:
-  - memory
-  - overhead
-  - slab
-  - cache
-  - vm
-  - page
--->
+Categories: unix
+            linux
+Tags: memory
+      overhead
+      slab
+      cache
+      vm
+      page
 
 ## References ##
 

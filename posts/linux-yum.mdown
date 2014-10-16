@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - linux
-  - redhat
-Tags:
-  - yum
--->
+Categories: linux
+            redhat
+Tags: yum
 
 ## Installing specific versions/architectures of packages ##
 

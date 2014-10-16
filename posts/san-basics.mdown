@@ -1,12 +1,11 @@
-<!--
-Categories:
-  - san
-Tags:
-  - hba
-  - lu
-  - fc
-  - fibre
--->
+Categories: storage
+            san
+Tags: hba
+      lu
+      fc
+      fibre
+
+
 ## Introduction
 
 Reference: VMWare Infrastructure 3: Install and Configure Student Manual for ESX Server 3.5 and VirtualCenter 2.5

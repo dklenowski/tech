@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - unix
-  - linux
-Tags:
-  - vi
--->
+Categories: unix
+            linux
+Tags: vi
 
 ### Enable spellchecker ###
 

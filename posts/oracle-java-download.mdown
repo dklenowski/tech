@@ -1,12 +1,8 @@
-<!--
-Categories:
-  - linux
-  - java
-Tags:
-  - download
-  - java
-  - oracle
--->
+Categories: linux 
+            java
+Tags: download
+      java
+      oracle
 
 - Downloading the Oracle binaries
 

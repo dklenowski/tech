@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - perl
-Tags:
-  - template
-  - class
-  - exe
--->
+Categories: perl
+Tags: template
+      class
+      exe
 
 ### Links ###
 

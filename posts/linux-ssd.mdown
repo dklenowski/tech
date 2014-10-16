@@ -1,12 +1,6 @@
-<!--
-Categories:
-  - linux
-  - ssd
-Tags:
-  - linux
-  - ssd
-  - performance
--->
+Categories: linux
+Tags: ssd
+      performance
 
 ## References ##
 

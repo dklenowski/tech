@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - solaris
-  - jumpstart
--->
+Categories: solaris
+Tags: solaris
+      jumpstart
 
 ### Package List
 

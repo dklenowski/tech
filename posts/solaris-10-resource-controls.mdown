@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - resource control
-  - prctl
--->
+Categories: solaris
+Tags: resource control
+      prctl
 
 ## Projects ##
 

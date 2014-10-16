@@ -1,12 +1,7 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - linux
-  - time
-  - date
-  - datetime
--->
+Categories: linux
+Tags: time
+      date
+      datetime
 
 ## Linux Clocks
 

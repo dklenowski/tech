@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - mecurial
-  - git
-Tags:
-  - git 
-  - mercurial
--->
+Categories: mecurial
+            git
+Tags: git 
+      mercurial
 
 ## Preliminaries ##
 

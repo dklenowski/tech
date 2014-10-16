@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - ruby
-Tags:
-  - delete_all
-  - destroy_all
--->
+Categories: ruby
+Tags: delete_all
+      destroy_all
 
 - `delete_all` disassociates objects from parent (e.g. by setting the key to `null`), while `destroy_all` actually destroys the objects.
 - e.g. used within a model

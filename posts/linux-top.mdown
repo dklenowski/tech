@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - top
--->
+Categories: linux
+Tags: top
 
 ## Shortcuts ##
 

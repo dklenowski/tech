@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - nfs
--->
+Categories: solaris
+Tags: nfs
 
 ### Daemons
 

@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - linux
-  - screen
--->
+Categories: linux
+Tags: linux
+      screen
 
 ## List `screen`s ##
 

@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - python
-Tags:
-  - xml
-  - lxml
--->
+Categories: python
+Tags: xml 
+      lxml
 
 ## Notes ##
 

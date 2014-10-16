@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - ruby
-Tags:
-  - empty
--->
+Categories: ruby
+Tags: empty
 
         str=somemethod()
         if not str.nil? and not str.empty?

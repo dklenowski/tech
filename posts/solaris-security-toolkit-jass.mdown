@@ -1,3 +1,6 @@
+Categories: solaris
+Tags: jass
+      security
 
 ## Solaris Security Toolkit (SUNWjass)
 

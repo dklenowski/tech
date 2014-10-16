@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - unix
-Tags:
-  - regular expression
-  - regex
--->
+Categories: unix
+Tags: regular expression
+      regex
 
 ## Regular Expressions
 

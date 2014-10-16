@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - perl
-Tags:
-  - module
--->
+Categories: perl
+Tags: module
 
 ## `Module::Starter` ##
 

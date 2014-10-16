@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - redis
-Tags:
-  - redis
--->
+Categories: redis
+Tags: redis
 
 ## Default db locations
 

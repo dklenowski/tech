@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - unix
-  - linux
-Tags:
-  - vi
--->
+Categories: unix
+            linux
+Tags: vi
 
 - Sometimes when your pasting into vi it will automagically insert comments if it finds one.
 - i.e. through smart indenting/auto indenting.

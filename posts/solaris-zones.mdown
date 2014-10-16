@@ -1,10 +1,5 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - zones
--->
-
+Categories: solaris
+Tags: zones
 
 ## Solaris Zones
 

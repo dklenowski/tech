@@ -1,11 +1,6 @@
-<!--
-Categories:
-  - perl
-Tags:
-  - perl
-  - config
-  - package
--->
+Categories: perl
+Tags: config
+      package
 
 Saves creating subroutines with long argument lists. Embed inside the main perl file.
 

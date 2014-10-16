@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - scheduler
-  - process
-  - thread
--->
+Categories: linux
+Tags: scheduler
+      process
+      thread
 
 ## References ##
 

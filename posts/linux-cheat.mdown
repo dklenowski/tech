@@ -1,13 +1,9 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - securetty
-  - getconf
-  - setuid
-  - setgid
-  - ldap
--->
+Categories: linux
+Tags: securetty
+      getconf
+      setuid
+      setgid
+      ldap
 
 ## Miscellaneous
 

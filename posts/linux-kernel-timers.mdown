@@ -1,11 +1,6 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - linux
-  - kernel
-  - timer
--->
+Categories: linux
+Tags: kernel
+      timer
 
 ## References ##
 

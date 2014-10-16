@@ -1,11 +1,6 @@
-<!--
-Categories:
-  - unix
-Tags:
-  - unix
-  - linux
-  - sudo
--->
+Categories: unix
+            linux
+Tags: sudo
 
 ## References ##
 

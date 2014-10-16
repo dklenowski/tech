@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - ilom
--->
+Categories: solaris
+Tags: ilom
 
 ### Setup ###
 

@@ -1,11 +1,6 @@
-<!--
-Categories:
-  - linux
-  - redhat
-Tags:
-  - kickstart
-  - pxe
--->
+Categories: linux
+Tags: kickstart
+      pxe
 
 ## PXE Configuration
 

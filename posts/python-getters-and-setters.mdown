@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - python
-Tags:
-  - getter
-  - setter
--->
+Categories: python
+Tags: getter
+      setter
 
 ### Python getter and setter properties ###
 

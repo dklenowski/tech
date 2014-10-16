@@ -1,13 +1,8 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - linux
-  - hugepages
-  - huge
-  - page
-  - memory
--->
+Categories: linux
+Tags: hugepages
+      huge
+      page
+      memory
 
 ## References 
 

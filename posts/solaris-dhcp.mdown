@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - dhcp
-  - dhcpd
--->
+Categories: solaris
+Tags: dhcp
+      dhcpd
 
 ### Server Configuration
 

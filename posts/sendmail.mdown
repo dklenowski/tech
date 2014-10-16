@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - linux
-  - unix
-Tags:
-  - sendmail
--->
+Categories: linux
+            unix
+Tags: sendmail
 
 ## Troubleshooting
 

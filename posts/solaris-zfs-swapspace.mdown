@@ -1,10 +1,5 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - zfs
--->
-
+Categories: solaris
+Tags: zfs
 
 ## Increasing ZFS Swapspace ##
 

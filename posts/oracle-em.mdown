@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - oracle
-Tags:
-  - em
-  - enterprise manager
--->
+Categories: oracle
+Tags: em
+      enterprise manager
 
 ## Useful links ##
 

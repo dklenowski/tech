@@ -1,13 +1,9 @@
-<!--
-Categories:
-  - linux
-  - redhat
-Tags:
-  - linux
-  - redhat
-  - openssh
-  - ssh
--->
+Categories: linux
+            redhat
+Tags: linux
+      redhat
+      openssh
+      ssh
 
 ## If not allready, install the `rpm` build stuff ##
 

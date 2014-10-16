@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - linux
-  - performance
--->
+Categories: linux
+Tags: linux
+      performance
 
 ## Reference ##
 

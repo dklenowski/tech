@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - nfs
--->
+Categories: linux
+Tags: nfs
 
 ## Server
 

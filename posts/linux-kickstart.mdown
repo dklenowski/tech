@@ -1,11 +1,6 @@
-<!--
-Categories:
-  - linux
-Tags:
-  - linux
-  - kickstart
-  - dhcpd
--->
+Categories: linux
+Tags: kickstart
+      dhcpd
 
 ## Setting up Kickstart ##
 

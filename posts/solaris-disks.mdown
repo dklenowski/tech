@@ -1,13 +1,9 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - disks
-  - mount
-  - devfsadm
-  - cdrom
-  - partition
--->
+Categories: solaris
+Tags: disks
+      mount
+      devfsadm
+      cdrom
+      partition
 
 ## `c0t0d0s0`
 

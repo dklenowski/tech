@@ -1,9 +1,5 @@
-<!--
-Categories:
-  - mercurial
-Tags:
-  - hg
--->
+Categories: mercurial
+Tags: hg
 
 ## Miscellaneous ##
 

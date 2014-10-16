@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - package
-  - pkginfo
-  - pkgadd
--->
+Categories: solaris
+Tags: package
+      pkginfo
+      pkgadd
 
 ### Notes ###
 

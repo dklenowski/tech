@@ -1,12 +1,8 @@
-<!--
-Categories:
-  - linux
-  - unix
-Tags:
-  - redirect
-  - stdout
-  - stderr
--->
+Categories: linux
+            unix
+Tags: redirect
+      stdout
+      stderr
 
 - To redirect `stdout` and `stderr` for `tmp.sh` to a file called `tmp.out`
 

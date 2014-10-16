@@ -1,11 +1,5 @@
-<!--
-Categories:
-  - linux
-  - encfs
-Tags:
-  - linux
-  - encfs
--->
+Categories: linux
+Tags: encfs
 
 ## Reference
 

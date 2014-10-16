@@ -1,14 +1,9 @@
-<!--
-Categories:
-  - storage
-Tags:
-  - raid
-  - storage
-  - mirror
-  - strip
-  - parity
--->
-
+Categories:  storage
+Tags: raid
+      storage
+      mirror
+      strip
+      parity
 
 # Overview #
 

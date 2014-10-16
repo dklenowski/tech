@@ -1,11 +1,7 @@
-<!--
-Categories:
-  - solaris
-Tags:
-  - cfgadm
-  - sysdef
-  - prtconf
--->
+Categories: solaris
+Tags: cfgadm
+      sysdef
+      prtconf
 
 If I did a `cfgadm -al` / `sysdef -i` / `prtconf` it would write to
 

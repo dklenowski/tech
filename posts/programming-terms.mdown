@@ -1,10 +1,6 @@
-<!--
-Categories:
-  - programming
-Tags:
-  - type
-  - polymorphism
--->
+Categories: programming
+Tags: type
+      polymorphism
 
 ## References ##
 

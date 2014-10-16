@@ -1,12 +1,10 @@
-<!--
-Categories:
-  - linux
-  - unix
-Tags:
-  - linux
-  - unix
-  - file times
--->
+Categories: linux
+            unix
+Tags: file times
+      ls
+      atime
+      ctime
+      mtime
 
 ### `ctime`
 
