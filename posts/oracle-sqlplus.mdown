@@ -55,8 +55,8 @@ where:
 
 ### Environment ###
 
-  set <variable> <value>
-  show <variable>
+    set <variable> <value>
+    show <variable>
 
 ### Output
 

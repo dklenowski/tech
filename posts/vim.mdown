@@ -68,3 +68,5 @@ Tags: vi
 - To insert a file below the cursor:
 
         :r <filename>
+
+

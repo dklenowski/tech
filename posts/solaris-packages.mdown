@@ -72,7 +72,7 @@ Tags: package
 
 ### Creating a package ###
 
-1.  Generate a list of <package>.files to include in the package.
+1.  Generate a list of `<package>`.files to include in the package.
 
 2.  Create the `prototype` file.
 
