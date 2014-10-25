@@ -1,3 +1,9 @@
+Categories: sun
+            solaris
+Tags: storedge
+      cfgadm
+      scsi
+      scsi options
 
 ### Command Timeout Issues ###
 

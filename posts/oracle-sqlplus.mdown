@@ -24,32 +24,32 @@ where:
 
 - Set the `EDITOR=vi` before running `sqlplus` to get the buffer to open `vi` when running a command.
 
-#### run|r ####
+#### `run|r`
 
 - Run command in buffer.
 
-#### list|l
+#### `list|l`
 
 - List contents of buffer.
 
-#### append|a
+#### `append|a`
 
 - Append to buffer.
 
-#### change /old/new
+#### `change /old/new`
 
 - Change old to new in buffer.
 
-#### input|i ####
+#### `input|i` ####
 
 - Add a line to the buffer.
 
-#### save <filename> ####
+#### `save <filename>` ####
 
 - Save buffer to file (replaces file).
 - Default extension .sql.
 
-#### get <filename> ####
+#### `get <filename>` ####
 
 - Load file `<filename>` into buffer.
 

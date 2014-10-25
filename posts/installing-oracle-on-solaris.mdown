@@ -131,7 +131,7 @@ For a good introduction into ASM creation visit [http://www.idevelopment.info/da
 - Location of Oracle software relative to `ORACLE_BASE`
 - OFA recommends:
 
-      export ORACLE_HOME=$ORACLE_BASE/product/<release>
+        export ORACLE_HOME=$ORACLE_BASE/product/<release>
 
 ### `ORACLE_SID` ###
 

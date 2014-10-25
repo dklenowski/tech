@@ -252,7 +252,7 @@ Ref: Metalink Doc ID: Note:105120.1
   - these undo segments are not manually manageable.
 
 - Can also create an undo tablespace during database creation.
-  - Note if you do not specify `UNDO TABLESPACE` clause and AUM is `AUTO` an undo tablespace with name `SYS_UNDOTBS` automatically created (With a filename `DBU1<SID>.dbf')
+  - Note if you do not specify `UNDO TABLESPACE` clause and AUM is `AUTO` an undo tablespace with name `SYS_UNDOTBS` automatically created (With a filename `DBU1<SID>.dbf`)
 
             CREATE DATABASE db9i
             ...
