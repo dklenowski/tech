@@ -2,6 +2,23 @@ Categories: git
 Tags: branch
       remote
 
+## Process for commit
+
+### Stage
+
+    git add
+
+#### To undo staged changes
+
+    git reset HEAD
+
+- Default is a `soft` undo (i.e. wont undo changes).
+
+### Commit
+
+    git commit
+
+
 ## Merge remote changes on master to a local branch
 
     git checkout master
@@ -13,3 +30,33 @@ Tags: branch
 
     git push -u origin <local-branch-name>
 
+## Apply outstanding commits before pushing changes
+
+    git pull --rebase
+
+## Undo the previous commit
+
+    git reset --soft HEAD^1 
+
+- e.g `1` down from `HEAD`
+- `soft` wont undo changes.
+- `hard` undoes all changes.
+
+
+## List current remote repositories
+
+    $ git remote -v
+    origin  https://github.com/dklenowski/redisutil.git (fetch)
+    origin  https://github.com/dklenowski/redisutil.git (push)
+
+## Moving a git repo
+
+    git clone --bare repo/ new.repo.bare/
+    scp -r new.repo.bare user@destination.com:/repo/
+
+- Then change the remote url's to point to the new repo.
+
+## Change remote repositories
+
+    git remote set-url  origin ssh://dave@test/repo/git/redisutil/
+    git remote set-url --push  origin ssh://dave@test/repo/git/redisutil/

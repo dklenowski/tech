@@ -16,3 +16,7 @@ Tags: redis
 			redis 127.0.0.1:6379> keys *
 			1) "index"
 			2) "processed"
+
+## To dump keys (using cli)
+
+      redis-cli KEYS \* > keys.txt

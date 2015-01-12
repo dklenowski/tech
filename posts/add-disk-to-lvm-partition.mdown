@@ -5,20 +5,20 @@ Tags: linux
 
 - Add a LVM Partition
 
-    fdisk /dev/sdc
+        # fdisk /dev/sdc
 
 - Create physical volume
 
-    # pvcreate /dev/sdc1
+        # pvcreate /dev/sdc1
 
 - Add the disk to the VG
 
-    #  vgextend vg /dev/sdc1
+        #  vgextend vg /dev/sdc1
 
 - Increase size of LV
 
-    #  lvextend -L+284GB /dev/pv/mysql
+        #  lvextend -L+284GB /dev/pv/mysql
 
 - Resize partition
 
-    # #  xfs_growfs /dev/mapper/pv-mysql
+        # xfs_growfs /dev/mapper/pv-mysql
