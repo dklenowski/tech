@@ -8,6 +8,10 @@ Tags: linux
       # dpkg --get-selections
       # dpkg --list
 
+## List information about installed package
+
+      # dpkg -s <installed-package>
+
 ## List the files contained within an installed package ##
 
       # dpkg --listfiles <installed-package>
@@ -30,25 +34,28 @@ Tags: linux
 
 ## View all versions available for a package
 
-        apt-cache madison <package>
+      # apt-cache madison <package>
 
+## View information about all packages available
+
+      # apt-cache show <package>
 
 ## Download (allready installed) package
 
-        apt-get -d -o=dir::cache=/tmp install <package> --reinstall
+      # apt-get -d -o=dir::cache=/tmp install <package> --reinstall
 
 ## Download (not installed) package
 
-        apt-get -d -o=dir::cache=/tmp install <package>
+      # apt-get -d -o=dir::cache=/tmp install <package>
 
 ## Contents of package
 
-        dpkg -L <package_name>
-        dpkg -c <package_name.deb>
+      # dpkg -L <package_name>
+      # dpkg -c <package_name.deb>
 
 ## Which package owns file
 
-         dpkg -S /bin/ls
+      # dpkg -S /bin/ls
 
 
 ## Locations ##
