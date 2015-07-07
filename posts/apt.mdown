@@ -3,6 +3,39 @@ Tags: linux
       debian
       apt
 
+
+# Operations
+
+## Add package ##
+
+      # apt-get install <package>
+
+## Remove Package ##
+
+      # apt-get remove <package>
+
+- To remove all modified files (e.g. config info)
+
+      # apt-get remove --purge <package>
+
+
+## Upgrading Packages
+
+- To upgrade packages:
+
+            apt-get -u upgrade
+
+- To upgrade all packages, even system packages (e.g. if you get a message saying `The following packages have been kept back` using the last step):
+
+            apt-get -u dist-upgrade
+
+## Refresh cache
+
+    # apt-get update
+
+# Information
+
+
 ## List installed packages ##
 
       # dpkg --get-selections
@@ -24,14 +57,6 @@ Tags: linux
 
       # apt-cache search <package>
 
-## Add package ##
-
-      # apt-get install <package>
-
-## Remove Package ##
-
-      # apt-get remove <package>
-
 ## View all versions available for a package
 
       # apt-cache madison <package>
@@ -39,14 +64,6 @@ Tags: linux
 ## View information about all packages available
 
       # apt-cache show <package>
-
-## Download (allready installed) package
-
-      # apt-get -d -o=dir::cache=/tmp install <package> --reinstall
-
-## Download (not installed) package
-
-      # apt-get -d -o=dir::cache=/tmp install <package>
 
 ## Contents of package
 
@@ -57,21 +74,32 @@ Tags: linux
 
       # dpkg -S /bin/ls
 
+# Downloading
 
-## Locations ##
+## Download (allready installed) package
 
-### The location of preinstall,postinstall etc scripts
+      # apt-get -d -o=dir::cache=/tmp install <package> --reinstall
+
+## Download (not installed) package
+
+      # apt-get -d -o=dir::cache=/tmp install <package>
+
+
+
+# Locations 
+
+## The location of preinstall,postinstall etc scripts
 
       /var/lib/dpkg/info/
 
-## Troubleshooting ##
+# Troubleshooting 
 
 
-### `Problem with MergeList` ###
+## `Problem with MergeList`
 
 - Remove the files in `/var/lib/apt/lists` (making sure not to remove the directory `/var/lib/apt/lists/partial`).
 
-### `Dynamic MMap ran out of room`
+## `Dynamic MMap ran out of room`
 
 - Edit/create a file called `/etc/apt/apt.conf` with the following line:
 
