@@ -1,0 +1,23 @@
+# Django
+
+## Commands
+
+### Run
+
+	 python manage.py runserver
+
+### Create Project
+
+	django-admin.py startproject <project>
+
+### Create app
+
+	django-admin.py startapp <app>
+
+### Create MySQL
+
+	python manage.py makemigrations <app>
+
+### Run MySQL
+
+	 python manage.py migrate
