@@ -8,6 +8,28 @@ Tags: replication
         log-bin=mysql-bin
 
 
+# Online Setup
+
+1. Lock tables and record the `File` and `Position`:
+
+        mysql> FLUSH TABLES WITH READ LOCK;
+        mysql> SHOW MASTER STATUS;
+
+2. Dump the master databases
+
+        mysqldump --all-databases --master-data > dbdump.db
+
+3. Apply the mysqldump on the slave
+
+        mysql -uroot -p < dbdump.db
+
+4. Update the master parameters on the slave and start replication
+
+        CHANGE MASTER TO MASTER_HOST='<master>',MASTER_USER='slave',
+        MASTER_PASSWORD='<password>',MASTER_LOG_FILE='<master-bin.log>',MASTER_LOG_POS=<master-log-pos>;
+
+# Offline Setup
+
 ## Initial Sync ##
 
 ### 1. Lock Master ###
