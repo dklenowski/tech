@@ -1,3 +1,6 @@
+Categories: mysql
+Tags: performance
+
 # Enable NUMA for Mysql
 
 - To enable NUMA in Percona for MySQL > 5.5
