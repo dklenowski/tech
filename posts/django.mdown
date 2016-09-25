@@ -1,23 +1,51 @@
-# Django
+Categories: django
+Tags: django
+	  python
 
-## Commands
+## Running
 
-### Run
+	python manage.py runserver
 
-	 python manage.py runserver
 
-### Create Project
+## Static directories
 
-	django-admin.py startproject <project>
+### settings.py
 
-### Create app
+		INSTALLED_APPS = (
+			...
+		    'django.contrib.staticfiles',
+		...		
+		STATIC_URL = '/static/'
 
-	django-admin.py startapp <app>
+- Dont need anything else or any additional routes ..
 
-### Create MySQL
 
-	python manage.py makemigrations <app>
+### Directory
 
-### Run MySQL
+- With the `<project>/<app>` 
+directory.
 
-	 python manage.py migrate
+		daves-MacBook-Pro:castnet-django dave$ ls -la <project>/<app>/static/
+		total 8
+		drwxr-xr-x   3 dave  staff  102 13 Sep 07:39 .
+		drwxr-xr-x  17 dave  staff  578 12 Sep 00:30 ..
+		-rw-r--r--   1 dave  staff  155 13 Sep 07:39 test.html
+
+### Acessing
+
+		http://localhost:8000/static/test.html
+
+## Make new migrations
+
+		 python manage.py makemigrations
+
+## List migrations
+
+		python manage.py migrate --list
+
+## Regenerate migrations
+
+- You can remove all the migrations in the 'migrations' directory and regenerate with:
+
+		python manage.py makemigrations capi
+

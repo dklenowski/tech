@@ -1,0 +1,30 @@
+
+## Variables
+
+### Global
+
+	var DB string = "database"
+
+###  Short 
+
+- i.e. dont specify a type, can be resused for different types
+- can only be used inside functions
+
+	i,j := 10
+
+## Const
+
+	const typedHello string = "Hello"		# typed, cant be reassigned to a untyped variable
+	const hello = "Hello"
+
+## Strings
+
+	glog.Infof("result=%s", str)
+
+## Arrays
+
+	var a [4]int
+	a[0] = 1
+	i := a[0]
+	// i == 1
+
