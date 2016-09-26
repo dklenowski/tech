@@ -6,6 +6,21 @@ Tags: puppet
 
 ## Language
 
+### Debugging 
+
+#### Send debug messages to the puppetmaster log file
+
+        debug('msg')
+        info('msg')
+        warning('msg')
+        crit('msg')
+        ...
+
+#### Display debug message on puppet  client
+
+        notify { 'Message': }
+
+
 ### Variables
 
 #### Fully Qualified Variables
@@ -13,6 +28,21 @@ Tags: puppet
 - Explicitly qualify variables including top level variables
 
         $puppet_environment = $::environment
+
+### Types
+
+#### resources
+
+- e.g. to delete any resources that is not specifed in the configuration and is not autorequired by any managed resources.
+
+        resources { [
+            'libvirt_domain',
+            'libvirt_pool',
+        ]:
+            purge => true,
+        }
+
+- The example above will delete any the `libvirt_domain` and `libvirt_pool` class if they are not required.
 
 
 ### Classes
@@ -22,6 +52,29 @@ Tags: puppet
           $puppet_daemon      = true,
           ..
         ) {
+
+
+#### Including Classes
+
+##### Using resource like declarations
+
+        class {
+          'apache':;
+        }
+
+- Notes:
+  - Multiple declaractions prohibited.
+  - Paramters can be overwridden at compile time.
+
+
+##### Using `include`
+
+        include base_linux, apache
+
+- Notes:
+  - Multiple declarations OK
+  - Relies on external data for parameters
+
 
 ### Conditional Statements
 
@@ -34,6 +87,9 @@ Tags: puppet
       if $collectdenabled {
 
       }
+
+
+      $arch = $::architecture ? { 'amd64' => 'x86_64', default => $::architecture }
 
 
 ## Pragma's
@@ -182,4 +238,12 @@ Tags: puppet
 
       <% c = scope.lookupvar('search::solr_cores') -%>
       export VALID_CORES="<%= c.join ' ' -%>"
+
+
+## Puppet Providers
+
+### Debugging
+
+         Puppet.warning "a warning message with a var " + var
+
 

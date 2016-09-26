@@ -6,23 +6,23 @@
 
 - Single number type (64 bit float)
 
-	var i = 1e2 // equivalent to i = 100
-	var j = 1.0
-	isNaN(j)
+        var i = 1e2 // equivalent to i = 100
+        var j = 1.0
+        isNaN(j)
 
 ### Strings
 
 - 16 bit unicode
 
-	var name = 'dave' // = "dave" is equivalent
+        var name = 'dave' // = "dave" is equivalent
 
 #### Concatenation
 
-	var a = "c"
-	var b = "a"
-	var d = "t"
+    var a = "c"
+    var b = "a"
+    var d = "t"
 
-	var name = c + a + t // === 'cat'
+    var name = c + a + t // === 'cat'
 
 
 ### falsy
@@ -45,11 +45,11 @@ All other values are truthy, including
 
 - Passed by reference.
 
- 	var empty_obj = {};
-	var stooge = {
-		"first-name": "dave",
-		"last-name": "klenowski"
-	}
+        var empty_obj = {};
+        var stooge = {
+        	"first-name": "dave",
+        	"last-name": "klenowski"
+        }
 
 - properties name can be any string (including empty str)
 - quotes around property name optional privded name is legal javascript name (and not a reserved word).
@@ -153,48 +153,46 @@ All other values are truthy, including
 ### Function
 
 - i.e. function invocation pattern
-
-	var sum = add(3, 4)
+        
+        var sum = add(3, 4)
 
 - for this function, `this` is bound to the global object.
   - therefore inner functions dont work because `this` bound to the wrong value.
   - for this, need to use methods (with a workaround)
 
-
-    		// Augment myObject with a double method.
-			myObject.double = function () {
-				var that = this; // Workaround.
-				var helper = function () {
-					that.value = add(that.value, that.value);
-				};
-			
-				helper(); // Invoke helper as a function.
-			};
-    		
-    		// Invoke double as a method.
-			myObject.double();
-			document.writeln(myObject.getValue()); // 6
+            // Augment myObject with a double method.
+            myObject.double = function () {
+            	var that = this; // Workaround.
+            	var helper = function () {
+            		that.value = add(that.value, that.value);
+            	};
+            
+            	helper(); // Invoke helper as a function.
+            };
+            	
+            // Invoke double as a method.
+            myObject.double();
+            document.writeln(myObject.getValue()); // 6
 
 ## Constructor
 
 - constructor invocation pattern.
 
-
-		// Create a constructor function called Quo.
-    	// It makes an object with a status property.
-    	var Quo = function (string) {
-    		this.status = string;
-    	};
-    	
-    	// Give all instances of Quo a public method
-		// called get_status.
-		Quo.prototype.get_status = function () {
-			return this.status;
-		};
-    	 
-    	// Make an instance of Quo.
-    	var myQuo = new Quo("confused");
-		document.writeln(myQuo.get_status()); // confused
+        // Create a constructor function called Quo.
+        // It makes an object with a status property.
+        var Quo = function (string) {
+        	this.status = string;
+        };
+        	
+        // Give all instances of Quo a public method
+        // called get_status.
+        Quo.prototype.get_status = function () {
+        	return this.status;
+        };
+        	 
+        // Make an instance of Quo.
+        var myQuo = new Quo("confused");
+        document.writeln(myQuo.get_status()); // confused
 
 ## Function with method
 
@@ -202,20 +200,25 @@ All other values are truthy, including
 
 - Case 1:
 
-	var arr = [3 ,4]
-	var sum = add.apply(null, array); // sum is 7
+        var arr = [3 ,4]
+        var sum = add.apply(null, array); // sum is 7
 
 - Case 2:
 
-    var statusObject = {
-        status: 'A-OK'
-	};
-     
-    // statusObject does not inherit from Quo.prototype,
-    // but we can invoke the get_status method on
-    // statusObject even though statusObject does not have
-    // a get_status method.
-    var status = Quo.prototype.get_status.apply(statusObject); // status is 'A-OK'
+        var statusObject = {
+          status: 'A-OK'
+        };
+           
+        // statusObject does not inherit from Quo.prototype,
+        // but we can invoke the get_status method on
+        // statusObject even though statusObject does not have
+        // a get_status method.
+        var status = Quo.prototype.get_status.apply(statusObject); // status is 'A-OK'
+
+## Augmenting Functinos
+
+- Changing basic types of language.
+- e.g. like adding a method to `Object.prototype`.
 
 
 
