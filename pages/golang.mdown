@@ -1,4 +1,10 @@
 
+## TODO
+
+	make(chan struct{})
+	message, _ := bufio.NewReader(conn).ReadString('\n')
+	_  - i think that is used when you dont want to create a variable for something ..
+
 ## Variables
 
 ### Global
@@ -27,4 +33,26 @@
 	a[0] = 1
 	i := a[0]
 	// i == 1
+
+## Slices
+
+### Initialization
+
+	len := 10
+	var a []int = make([]int, len)
+	for i := range a {
+		a[i] = 1
+	}
+
+## Structs
+
+### Initialization
+
+	type GraphMsg struct {
+		number int
+		y float32
+	}
+	..
+	g := GraphMsg{number: num, y:val}
+	
 
