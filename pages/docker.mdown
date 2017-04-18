@@ -1,0 +1,9 @@
+Categories: containers
+Tags: unix, docker, container, linux, devops
+
+## Commands
+
+### Cleanup
+
+    docker rm -v $(docker ps -a -q -f status=exited)
+    docker rmi $(docker images -f "dangling=true" -q)

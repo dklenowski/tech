@@ -1,0 +1,12 @@
+Categories: puppet
+Tags: puppet
+      linux
+
+
+## View Puppet facts
+
+    curl -X GET http://localhost:8080/v3/facts  --data-urlencode 'query=["=", "name", "hostname"]'
+
+## View Puppet Resources
+
+    curl 'http://localhost:8080/v3/resources?query=\["=","exported",true\]' 
