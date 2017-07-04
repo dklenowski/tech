@@ -1,0 +1,83 @@
+Categories: elasticsearch
+Tags: cluster
+      indexes
+      shards
+
+# Cheatsheet
+
+# Restarting a node
+
+## Disable shard allocation
+
+    curl -XPUT localhost:9200/_cluster/settings -d '{"transient":{"cluster.routing.allocation.enable": "none"}}'
+
+## Restart node
+
+## Enable shard allocation
+
+    curl -XPUT localhost:9200/_cluster/settings -d '{"transient":{"cluster.routing.allocation.enable": "all"}}'
+
+## General
+
+## Cluster
+
+### Cluster Status
+
+    curl localhost:9200/_cluster/health?pretty
+
+### Cluster settings
+
+    curl 'http://localhost:9200/_cluster/settings?pretty'
+
+### List nodes in the cluster
+
+     curl -s 'localhost:9200/_cat/nodes?v'
+
+### Info about re-assigning
+
+    curl -XPOST "http://localhost:9200/_cluster/reroute?explain"
+
+## Indexes
+
+### State of Indexes/Shards
+
+    curl -XGET http://localhost:9200/_cluster/state?pretty=true
+
+### List Properties of all Indexes
+
+    curl -XGET 'http://localhost:9200/_all/_mapping?pretty-=true'
+
+### Number of Shards for
+
+    curl -XGET 'http://localhost:9200/<idnex>/block/_count'
+
+
+
+# Notes
+
+- An **index** is made up of **shards**.
+
+## Shards
+
+- A **shard** maps to a lucene **instance/index**.
+
+### Primary Shard (aka **shard**)
+
+- An **index** has >= 1 **primary** shards.
+- Default 5, cannot be changed after index creation.
+
+### Replica Shard (aka **replica**)
+
+- Each **primary** shard has >= 0 **replica** shards.
+- Used for high availability and throughput.
+
+
+
+## Notes
+
+- Replication is synchronous, i.e. if replica fails, ES will not return response until it is fixed.
+- ES has a preference to examine local replica's, will go to primary shard if ES instances doesn't have the info.
+
+### Yellow State
+
+- For shard, typically means ESA cannot assign all replica's (e.g. not enough nodes)
