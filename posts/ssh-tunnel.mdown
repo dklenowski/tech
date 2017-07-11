@@ -1,0 +1,13 @@
+Categories: linux
+Tags: ssh
+      tunnel
+      linux
+
+
+# Examples
+
+## Tunnel elasticsearch port 9200 through localhost to a remove Elasticsearch server
+
+  ssh -Nf -L 9200:localhost:9200 root@es-master001.cloud
+
+

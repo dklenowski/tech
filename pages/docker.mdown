@@ -3,6 +3,14 @@ Tags: unix, docker, container, linux, devops
 
 ## Commands
 
+### List
+
+     docker list
+
+### List Containers
+
+     docker ps -a
+
 ### Cleanup
 
     docker rm -v $(docker ps -a -q -f status=exited)
