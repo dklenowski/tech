@@ -1,17 +1,30 @@
 Categories: containers
-Tags: unix, docker, container, linux, devops
+Tags: unix
+      docker
+      container
+      linux
+      devops
 
-## Commands
+# Commands
 
-### List
+## List
 
      docker list
 
-### List Containers
+## List Containers
 
      docker ps -a
 
-### Cleanup
+## Cleanup
 
     docker rm -v $(docker ps -a -q -f status=exited)
     docker rmi $(docker images -f "dangling=true" -q)
+
+## Running
+
+## Simple instance with bash prompt
+
+  docker run -n=false -i -t <instanceid> /bin/bash
+  docker run -n=false -i -t d658d6196048 /bin/bash
+
+
