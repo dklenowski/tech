@@ -23,11 +23,22 @@ Tags: branch
 
 - `-u` ensures a *tracking* branch is created (i.e. a relationship between local and remote).
 
-### List remote repo's
+### List remote repo's (including upstream repo's)
 
     git remote -v
     origin  https://github.com/davidk/redisutil.git (fetch)
     origin  https://github.com/davidk/redisutil.git (push)
+
+### Add an upstream repo
+
+    git remote add upstream git://github.com/path/to/forked/repo.git
+    git fetch upstream
+
+### Merging from an upstream repo
+
+    git remote add upstream git://github.com/path/to/forked/repo.git
+    git fetch upstream
+    git merge upstream/master
 
 ## Setup
 
