@@ -1,9 +1,9 @@
+Categories: java
+Tags: java
+      hadoop
+      hive
 
 # Hadoop Course Notes
-
-- Class ID: 4559
-- Key: s4UvUwrE
-
 
 ## Cheatsheat
 
