@@ -1,3 +1,7 @@
+Categories: programming
+Tags: golang
+			go
+
 
 ## TODO
 
