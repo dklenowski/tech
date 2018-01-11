@@ -12,7 +12,11 @@ Tags: mysql slave replication recreate
 
      flush tables with read lock;
 
-### 2. Take a `mysqldump`
+### 2. Record the master file and position (for use when you run the `change master` command on the slave)
+
+     show master status;
+
+### 3. Take a `mysqldump`
 
      mysqldump --all-databases --master-data > dbdump.sql
 
@@ -38,16 +42,18 @@ Tags: mysql slave replication recreate
 
         cd /usr ; /usr/bin/mysqld_safe &
 
-### 5. Setup replication
+### 5. Import the data
+
+    mysql -uroot < dbdump.sql
+
+### 6. Setup replication
+  - Use the `master_log_file` and `master_log_pos` from the `show master status` command in the first step.
 
     CHANGE MASTER TO
     MASTER_HOST='<slave-host>',
     MASTER_USER='slave',
-    MASTER_PASSWORD='<slave-password>';
-
-### 6. Import the data
-
-    mysql -uroot < dbdump.sql
+    MASTER_PASSWORD='<slave-password>'
+    MASTER_LOG_FILE='<master-bin.<no>', MASTER_LOG_POS=<pos>;
 
 ### 7. Ensure `/etc/mysql/debian.cnf` matches the master
 
