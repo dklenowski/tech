@@ -1,9 +1,22 @@
+Categories: programming
+Tags: go
+      golang
+      
+
 
 ## TODO
 
 	make(chan struct{})
 	message, _ := bufio.NewReader(conn).ReadString('\n')
 	_  - i think that is used when you dont want to create a variable for something ..
+
+
+## Cheatsheet
+
+### Printing stuff
+
+- Use `%v` format to print arrays.
+- Use `%+v` to print structs (the `+` add's field names)
 
 ## Variables
 
@@ -17,6 +30,7 @@
 - can only be used inside functions
 
 	i,j := 10
+	f := float32(10)
 
 ## Const
 
@@ -44,6 +58,22 @@
 		a[i] = 1
 	}
 
+### Empty Slices
+
+	// Use make to create an empty slice of integers.
+	slice := make([]int, 0)
+	// Use a slice literal to create an empty slice of integers.
+	slice := []int{}
+
+## Maps
+
+### Check if a key exists
+
+	_, ok := m["key"]
+	if ok {
+		// key exists
+	}
+
 ## Structs
 
 ### Initialization
@@ -55,4 +85,13 @@
 	..
 	g := GraphMsg{number: num, y:val}
 	
+## Pointers
+
+### Returning from a function
+
+	var p = f()
+	func f() *int {
+		v := 1
+	return &v
+	}
 
