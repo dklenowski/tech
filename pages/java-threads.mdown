@@ -1,5 +1,6 @@
-Categories: java
+Categories: programming
 Tags: thread
+      java
 
 ## References ##
 

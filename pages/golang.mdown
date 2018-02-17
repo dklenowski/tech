@@ -1,14 +1,12 @@
 Categories: programming
 Tags: go
       golang
-      
-
 
 ## TODO
 
 	make(chan struct{})
 	message, _ := bufio.NewReader(conn).ReadString('\n')
-	_  - i think that is used when you dont want to create a variable for something ..
+	`_`  - i think that is used when you dont want to create a variable for something ..
 
 
 ## Cheatsheet

@@ -1,3 +1,6 @@
+Categories: programming
+Tags: javascript
+
 # Javascript
 
 ## Datatypes

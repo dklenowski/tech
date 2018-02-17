@@ -78,6 +78,19 @@ Tags: puppet
 
 ### Conditional Statements
 
+#### conditionals
+
+     case $type {
+       'interactive': { 
+         # do something
+       }
+
+       default: {
+       }
+     }
+
+#### if/else
+
       if $::companyenv != 'qa' {
         ...
       } else {
@@ -128,6 +141,13 @@ Tags: puppet
           group   => 'root',
           replace => false,
           mode    => '0755';
+        }
+
+#### Creating a symlink
+
+        file { '/etc/link':
+          ensure => link,
+          target => '/etc/dir/link'
         }
 
 
@@ -233,6 +253,10 @@ Tags: puppet
         templatedir=$confdir/templates
         <% end -%>
 
+## Referencing facts
+
+      <% if companyenv == 'qa' -%>
+       
 
 ## Referencing global variables
 
