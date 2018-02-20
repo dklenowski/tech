@@ -6,6 +6,10 @@ Tags: linux
 
 # Operations
 
+## Importing Keys ##
+
+      wget -q 'http://repo/keys/percona.gpg' -O- | apt-key add -
+
 ## Add package ##
 
       # apt-get install <package>
