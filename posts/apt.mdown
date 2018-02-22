@@ -96,6 +96,10 @@ Tags: linux
 
       /var/lib/dpkg/info/
 
+# The location of packages installed/updated
+
+      /var/cache/apt/archives
+
 # Troubleshooting 
 
 
