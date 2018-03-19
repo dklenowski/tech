@@ -5,6 +5,110 @@ Tags: cluster
 
 # Cheatsheet
 
+# Queries
+
+## Search
+
+    GET /_search
+    {
+      "query": {
+        "match_all": {}
+      }
+    }
+
+    GET /video/_search
+    {
+        "query": {
+           "term" : { "display_name" : "hom" }
+        }
+    }
+    
+    GET /video/_search
+    { "query": {
+        "prefix" : { "display_name" : "ed" }
+      }
+    }
+
+
+    GET /dare/_search
+    {
+            "query": {
+                "bool": {
+                    "should": [
+                        {"match": {"by_user_id": 2}},
+                        {"match": {"for_user_id": 2}}
+                    ]
+                }
+            },
+            "sort": [
+                {"likes": {"order": "desc"}},
+                {"backers": {"order": "desc"}},
+                {"views": {"order": "desc"}}
+            ]
+    }
+
+
+    GET user/_search
+    {
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "multi_match": {
+                "query": "the",
+                "type": "phrase_prefix", 
+                "fields": ["username","email","nickname"]
+              }
+            }
+          ],
+          "filter": {
+            "terms": {
+              "_id": [
+                "1",
+                "2",
+                "3"
+              ]
+            }
+          }
+        }
+      }
+    }
+
+    GET /video/_search?size=20&from=70
+    {
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "user_id": 1
+              }
+            }
+          ],
+          "filter": {
+            "terms": {
+              "group_id": [
+                1,
+                2
+              ]t
+            }
+          }
+        }
+      },
+      "sort": [
+        {
+          "current_likes": {
+            "order": "desc"
+          }
+        },
+        {
+          "current_backers": {
+            "order": "desc"
+          }
+        }
+      ]
+    }
+
 # Restarting a node
 
 ## Disable shard allocation
@@ -95,6 +199,82 @@ e.g. change the number of replica's (note, this can be an expensive operation an
 - Each **primary** shard has >= 0 **replica** shards.
 - Used for high availability and throughput.
 
+## tokenizer
+
+- Mapping
+
+    PUT /user
+    {
+      "settings": {
+        "index": {
+          "number_of_shards": 3,
+          "number_of_replicas": 1
+        },
+        "analysis": {
+          "filter": {
+            "email": {
+              "type": "pattern_capture",
+              "preserve_original": true,
+              "patterns": [
+                "([^@]+)",
+                "(\\p{L}+)",
+                "(\\d+)",
+                "@(.+)"
+              ]
+            }
+          },
+          "analyzer": {
+            "email": {
+              "tokenizer": "uax_url_email",
+              "filter": [
+                "email",
+                "lowercase",
+                "unique"
+              ]
+            }
+          }
+        }
+      },
+      "mappings": {
+        "user": {
+          "properties": {
+            "id": {
+              "type": "keyword"
+            },
+            "joined": {
+              "type": "date"
+            },
+            "name": {
+              "type": "text",
+              "analyzer": "simple",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 50
+                }
+              }
+            },
+            "email": {
+              "type": "text",
+              "analyzer": "email",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 255
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+- Testing
+
+    GET /user/_analyze?analyzer=email
+    {
+    "text": "eddie.vedder@gmail.com"
+    }
 
 
 ## Notes
