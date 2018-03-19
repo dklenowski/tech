@@ -4,122 +4,14 @@ Tags: python
 
 # Python Basics
 
-## Template
+## Args
 
-        [sourcecode language="python"]
-        #!/usr/bin/env python
-        # encoding: utf-8
-        """
-        Sample layouy
-        """
+    def save(self, *args, **kwargs):
+        if 'index' in kwargs:
+            to_index = kwargs.pop('index')
+           
+         super(Obj, self).save(*args, **kwargs)
 
-        import sys
-        import getopt
-        import logging
-        import os
-
-        ##
-        # constants
-        ##
-
-        LOG = logging.getLogger("sample");
-
-        HELP_MSG = """
-          A help message.
-        """
-
-        ##
-        # classes
-        ##
-
-        """
-        Generic Usage exception.
-        """
-        class Usage(Exception):
-          def __init__(self, msg):
-            self.msg = msg
-
-        """
-        Stores configuration information for the script.
-        """
-        class Config:
-          # default config file
-          cfg_file = '/tmp/test.txt'
-
-          @staticmethod
-          def validate():
-            if not os.path.exists(Config.cfg_file):
-              raise ConfigException("Main configuration file %s does not exist?" % Config.cfg_file)
-
-        """
-        An exception for Config.validate()
-        """
-        class ConfigException(Exception):
-          def __init__(self, msg):
-            self.msg = msg
-
-
-        """
-        A class used like an enum
-        """
-        class Op:
-          LOCK, UNLOCK = range(2)
-
-          @staticmethod
-          def str(value):
-            if value == RepoOp.LOCK:
-              return "lock"
-            elif value == RepoOp.UNLOCK:
-              return "unlock"
-
-        ##
-        # main methods
-        ##
-
-        """
-        Do something
-        """
-        def doSomething():
-          print "I am doing something"
-
-        """
-        Main.
-        """
-        def main(argv=None):
-          if argv is None:
-            argv = sys.argv
-
-          logging.basicConfig(format = "%(asctime)s: [%(levelname)s] - %(message)s")
-          LOG.setLevel(logging.DEBUG)
-
-          try:
-            try:
-              opts, args = getopt.getopt(argv[1:], "ho:", [ "help", "output=o" ])
-            except getopt.error, msg:
-              raise Usage(msg)
-              return 1
-
-            if len(opts) == 0:
-              # must have at least 1 command line argument
-              raise Usage(HELP_MSG)
-
-            for option, value in opts:
-              if option in ("-h", "--help"):
-                raise Usage(HELP_MSG)
-
-          except Usage, err:
-            print str(err.msg)
-            return 1
-
-          # do something
-          return 0
-
-          #
-          # main
-          #
-          if __name__ == "__main__":
-            sys.exit(main())
-        [/sourcecode]
 
 ## Miscellaneous ##
 
@@ -231,9 +123,9 @@ or
 ### Read lines from file
 
     [sourcecode language="python"]
-    inp = open('myfile', 'r')
-    for line in inp:
-      doSomething(line)
+    with open('myfile', 'r') as inp:
+      for line in inp:
+        doSomething(line)
 
 ### Recursively search a directory ###
 
@@ -369,4 +261,120 @@ Python has no "enum" construct, instead uses classes:
 
 Standard Exceptions: http://docs.python.org/library/exceptions.html
 
+# Template
+
+        [sourcecode language="python"]
+        #!/usr/bin/env python
+        # encoding: utf-8
+        """
+        Sample layout
+        """
+
+        import sys
+        import getopt
+        import logging
+        import os
+
+        ##
+        # constants
+        ##
+
+        LOG = logging.getLogger("sample");
+
+        HELP_MSG = """
+          A help message.
+        """
+
+        ##
+        # classes
+        ##
+
+        """
+        Generic Usage exception.
+        """
+        class Usage(Exception):
+          def __init__(self, msg):
+            self.msg = msg
+
+        """
+        Stores configuration information for the script.
+        """
+        class Config:
+          # default config file
+          cfg_file = '/tmp/test.txt'
+
+          @staticmethod
+          def validate():
+            if not os.path.exists(Config.cfg_file):
+              raise ConfigException("Main configuration file %s does not exist?" % Config.cfg_file)
+
+        """
+        An exception for Config.validate()
+        """
+        class ConfigException(Exception):
+          def __init__(self, msg):
+            self.msg = msg
+
+
+        """
+        A class used like an enum
+        """
+        class Op:
+          LOCK, UNLOCK = range(2)
+
+          @staticmethod
+          def str(value):
+            if value == RepoOp.LOCK:
+              return "lock"
+            elif value == RepoOp.UNLOCK:
+              return "unlock"
+
+        ##
+        # main methods
+        ##
+
+        """
+        Do something
+        """
+        def doSomething():
+          print "I am doing something"
+
+        """
+        Main.
+        """
+        def main(argv=None):
+          if argv is None:
+            argv = sys.argv
+
+          logging.basicConfig(format = "%(asctime)s: [%(levelname)s] - %(message)s")
+          LOG.setLevel(logging.DEBUG)
+
+          try:
+            try:
+              opts, args = getopt.getopt(argv[1:], "ho:", [ "help", "output=o" ])
+            except getopt.error, msg:
+              raise Usage(msg)
+              return 1
+
+            if len(opts) == 0:
+              # must have at least 1 command line argument
+              raise Usage(HELP_MSG)
+
+            for option, value in opts:
+              if option in ("-h", "--help"):
+                raise Usage(HELP_MSG)
+
+          except Usage, err:
+            print str(err.msg)
+            return 1
+
+          # do something
+          return 0
+
+          #
+          # main
+          #
+          if __name__ == "__main__":
+            sys.exit(main())
+        [/sourcecode]
 

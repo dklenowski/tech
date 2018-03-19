@@ -21,7 +21,7 @@ Tags: cluster
 
 ## Cluster
 
-### Cluster Status
+### Cluster Health
 
     curl localhost:9200/_cluster/health?pretty
 
@@ -39,6 +39,10 @@ Tags: cluster
 
 ## Indexes
 
+### List indexes
+
+    curl -XGET 'localhost:9200/_cat/indices?v&pretty'    
+
 ### State of Indexes/Shards
 
     curl -XGET http://localhost:9200/_cluster/state?pretty=true
@@ -47,13 +51,33 @@ Tags: cluster
 
     curl -XGET 'http://localhost:9200/_all/_mapping?pretty-=true'
 
-### Number of Shards for
+### Settings for indexes
 
-    curl -XGET 'http://localhost:9200/<idnex>/block/_count'
+    curl -XGET 'localhost:9200/<index>/_settings?pretty'
 
+### Number of Shards for index
 
+    curl -XGET 'http://localhost:9200/<index>/block/_count'
 
-# Notes
+### Modify setting for an index
+
+e.g. change the number of replica's (note, this can be an expensive operation and may affect operation for busy clusters).
+
+    curl -XPUT 'localhost:9200/suggestion_20180121/_settings?pretty' -H 'Content-Type: application/json' -d'
+    {
+        "index" : {
+            "number_of_replicas" : 0
+        }
+    }
+    '
+
+## Aliases
+
+### List Aliases
+
+    curl -XGET 'localhost:9200/_cat/aliases?v&pretty'
+
+## Notes
 
 - An **index** is made up of **shards**.
 
