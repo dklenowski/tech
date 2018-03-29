@@ -9,6 +9,8 @@ Tags: cluster
 
 ## Search
 
+### Match All
+
     GET /_search
     {
       "query": {
@@ -16,19 +18,27 @@ Tags: cluster
       }
     }
 
-    GET /video/_search
-    {
-        "query": {
-           "term" : { "display_name" : "hom" }
+### Term Query
+
+- Exact match (on inverted index)
+
+        GET /video/_search
+        {
+            "query": {
+               "term" : { "display_name" : "hom" }
+            }
         }
-    }
-    
+
+### Prefix Query
+
     GET /video/_search
     { "query": {
         "prefix" : { "display_name" : "ed" }
       }
     }
 
+
+### Complex Query
 
     GET /dare/_search
     {
@@ -74,27 +84,8 @@ Tags: cluster
       }
     }
 
-    GET /video/_search?size=20&from=70
+    GET /video/_search
     {
-      "query": {
-        "bool": {
-          "must": [
-            {
-              "match": {
-                "user_id": 1
-              }
-            }
-          ],
-          "filter": {
-            "terms": {
-              "group_id": [
-                1,
-                2
-              ]t
-            }
-          }
-        }
-      },
       "sort": [
         {
           "current_likes": {
@@ -106,7 +97,56 @@ Tags: cluster
             "order": "desc"
           }
         }
-      ]
+      ],
+      "query": {
+        "bool": {
+          "filter": {
+            "terms": {
+              "group_id": [
+                1,
+                0
+              ]
+            }
+          },
+          "must_not": [
+            {
+              "match": {
+                "user_id": 6
+              }
+            }
+          ],
+          "must": [
+            {
+              "multi_match": {
+                "query": "fantastic",
+                "type": "phrase_prefix",
+                "fields": [
+                  "display_name",
+                  "title",
+                  "tags",
+                  "description"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+
+
+### Completion Suggester
+
+    GET user_suggest/_search
+    {
+      "suggest": {
+        "all": {
+          "prefix": "Tracy5516Woods@",
+          "completion": {
+            "field": "suggest",
+            "size": 1
+          }
+        }
+      }
     }
 
 # Restarting a node
@@ -203,78 +243,78 @@ e.g. change the number of replica's (note, this can be an expensive operation an
 
 - Mapping
 
-    PUT /user
-    {
-      "settings": {
-        "index": {
-          "number_of_shards": 3,
-          "number_of_replicas": 1
-        },
-        "analysis": {
-          "filter": {
-            "email": {
-              "type": "pattern_capture",
-              "preserve_original": true,
-              "patterns": [
-                "([^@]+)",
-                "(\\p{L}+)",
-                "(\\d+)",
-                "@(.+)"
-              ]
+        PUT /user
+        {
+          "settings": {
+            "index": {
+              "number_of_shards": 3,
+              "number_of_replicas": 1
+            },
+            "analysis": {
+              "filter": {
+                "email": {
+                  "type": "pattern_capture",
+                  "preserve_original": true,
+                  "patterns": [
+                    "([^@]+)",
+                    "(\\p{L}+)",
+                    "(\\d+)",
+                    "@(.+)"
+                  ]
+                }
+              },
+              "analyzer": {
+                "email": {
+                  "tokenizer": "uax_url_email",
+                  "filter": [
+                    "email",
+                    "lowercase",
+                    "unique"
+                  ]
+                }
+              }
             }
           },
-          "analyzer": {
-            "email": {
-              "tokenizer": "uax_url_email",
-              "filter": [
-                "email",
-                "lowercase",
-                "unique"
-              ]
-            }
-          }
-        }
-      },
-      "mappings": {
-        "user": {
-          "properties": {
-            "id": {
-              "type": "keyword"
-            },
-            "joined": {
-              "type": "date"
-            },
-            "name": {
-              "type": "text",
-              "analyzer": "simple",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 50
-                }
-              }
-            },
-            "email": {
-              "type": "text",
-              "analyzer": "email",
-              "fields": {
-                "keyword": {
-                  "type": "keyword",
-                  "ignore_above": 255
+          "mappings": {
+            "user": {
+              "properties": {
+                "id": {
+                  "type": "keyword"
+                },
+                "joined": {
+                  "type": "date"
+                },
+                "name": {
+                  "type": "text",
+                  "analyzer": "simple",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 50
+                    }
+                  }
+                },
+                "email": {
+                  "type": "text",
+                  "analyzer": "email",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 255
+                    }
+                  }
                 }
               }
             }
           }
         }
-      }
-    }
 
 - Testing
 
-    GET /user/_analyze?analyzer=email
-    {
-    "text": "eddie.vedder@gmail.com"
-    }
+        GET /user/_analyze?analyzer=email
+        {
+        "text": "eddie.vedder@gmail.com"
+        }
 
 
 ## Notes
