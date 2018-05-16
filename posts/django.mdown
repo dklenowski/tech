@@ -1,0 +1,51 @@
+Categories: django
+Tags: django
+	  python
+
+## Running
+
+	python manage.py runserver
+
+
+## Static directories
+
+### settings.py
+
+		INSTALLED_APPS = (
+			...
+		    'django.contrib.staticfiles',
+		...		
+		STATIC_URL = '/static/'
+
+- Dont need anything else or any additional routes ..
+
+
+### Directory
+
+- With the `<project>/<app>` 
+directory.
+
+		daves-MacBook-Pro:castnet-django dave$ ls -la <project>/<app>/static/
+		total 8
+		drwxr-xr-x   3 dave  staff  102 13 Sep 07:39 .
+		drwxr-xr-x  17 dave  staff  578 12 Sep 00:30 ..
+		-rw-r--r--   1 dave  staff  155 13 Sep 07:39 test.html
+
+### Acessing
+
+		http://localhost:8000/static/test.html
+
+## Make new migrations
+
+		 python manage.py makemigrations
+
+## List migrations
+
+		python manage.py migrate --list
+
+## Regenerate migrations
+
+- You can remove all the migrations in the 'migrations' directory and regenerate with:
+
+		python manage.py makemigrations capi
+
