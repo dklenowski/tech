@@ -27,8 +27,8 @@ Tags: go
 - i.e. dont specify a type, can be resused for different types
 - can only be used inside functions
 
-	i,j := 10
-	f := float32(10)
+	    i,j := 10
+	    f := float32(10)
 
 ## Const
 
@@ -93,3 +93,13 @@ Tags: go
 	return &v
 	}
 
+## Functions
+
+### Returning multiple values
+
+    func vals() (int, int) {
+        return 3, 7
+    }
+    
+    a, b := vals()
+ 
