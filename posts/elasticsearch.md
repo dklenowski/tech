@@ -29,6 +29,25 @@ Tags: cluster
             }
         }
 
+### Terms Query
+
+        GET /video/_search
+        {
+          "query": {
+            "terms": {
+              "block": [
+                "a",
+                "small",
+                "cat",
+                "has",
+                "another"
+              ],
+              "minimum_should_match": "2"
+            }
+          }
+        }
+
+
 ### Prefix Query
 
     GET /video/_search
