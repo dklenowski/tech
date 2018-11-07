@@ -22,6 +22,14 @@ e.g. to add `camera`
 
 - Single child and positions in middle of parent.
 
+### `Container`
+
+Ref: https://medium.com/jlouage/container-de5b0d3ad184
+
+- No child, automatically fill given area, otherwise wrap height/weight of child.
+- Should not be rendered without a parent widget (e.g. `Center`, `Column`, `Row` etc)
+- Typically used if you need to do some alignment.
+
 ## Miscellaneous
 
 ### Screen Size

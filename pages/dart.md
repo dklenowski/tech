@@ -1,3 +1,37 @@
+## TODO
+
+    parameters: new Map<String, dynamic>.unmodifiable(
+    	new Map<String, dynamic>.from(_parameters)..addAll(parameters),
+
+  FacebookAccessToken.fromMap(Map<String, dynamic> map)
+      : token = map['token'],
+        userId = map['userId'],
+        expires = new DateTime.fromMillisecondsSinceEpoch(
+          map['expires'],
+          isUtc: true,
+        ),
+        permissions = map['permissions'].cast<String>(),
+        declinedPermissions = map['declinedPermissions'].cast<String>();
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is FacebookAccessToken &&
+          runtimeType == other.runtimeType &&
+          token == other.token &&
+          userId == other.userId &&
+          expires == other.expires &&
+          permissions == other.permissions &&
+          declinedPermissions == other.declinedPermissions;
+
+		  Future<bool> get isLoggedIn async => await currentAccessToken != null;
+		    
+## Miscellaneous
+
+- `@required` defined in both `package:flutter/material.dart` and `package:meta/meta.dart`.
+
+
+
 ## Layout
 
 		// Define a function.
@@ -19,6 +53,9 @@
 
 
 	var _v = 1;		// '_' means variable is private to library.
+
+## Arrays
+
 
 ### Defaults
 
@@ -281,7 +318,15 @@ With constructor syntactic sugar:
 		}
 
 
-### Getters and Setters
+### Getters and Setters (aka accessors/mutators).
 
 - Each instance variable implied getter and setter.
 - Implement additonal using `get` and `set`.
+
+
+## Async
+
+### `catchError`
+
+- If you return a `Future` with `catchError` and you want throw an exception, you must use `async`
+
