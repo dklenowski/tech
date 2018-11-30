@@ -6,6 +6,12 @@
           )
       );
 
+## Using custom icons
+
+	..
+	icon: Image.asset('icons/vs-18.png'))
+	..
+
 
 ## Stateful Widgets
 
