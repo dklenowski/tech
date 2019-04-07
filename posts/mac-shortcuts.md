@@ -25,6 +25,11 @@ Tags: vscode
 
 - `Shift+Alt` and drag mouse.
 
+## Column select end of lines
+
+- Select block.
+- `Shift+Alt+I`
+
 ## Indent Block
 
 - `tab`
